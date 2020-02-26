@@ -30,7 +30,7 @@ public class TestController extends TestParent {
 
         return "foo";
     }
-    @RequestMapping("bar/{bbb:...[0-9]}/ccc")
+    @RequestMapping("/bar/{bbb:...[0-9]}/ccc")
     public String bar(@PathVariable String bbb) {
 
         return "bar"+bbb;
@@ -39,6 +39,7 @@ public class TestController extends TestParent {
     public String foobar(@PathVariable String dummy){
         return "foobar";
     }
+
     @RequestMapping(PARENT_CONST+"/"+EXTRA)
     public String boo(@PathVariable String dummy2, @PathVariable String dummy3){
         return "boo";
