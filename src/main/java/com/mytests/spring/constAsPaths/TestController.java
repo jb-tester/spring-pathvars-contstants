@@ -11,11 +11,12 @@ public class TestController extends TestParent {
 
     @GetMapping()
     public String demo() {
-
-
         return "data";
     }
-
+    @GetMapping("noLeadingSlash")
+    public String noLeadingSlashCase(){
+        return "it works";
+    }
     @GetMapping("/ttt/${urlProperty}")
     public String getHello() {
 
