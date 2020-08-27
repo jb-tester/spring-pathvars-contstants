@@ -1,10 +1,10 @@
 package com.mytests.spring.constAsPaths;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class  IDEA_121150_Controller {
     public static final String MYCONST = "/const";
     public static final String EXPLICIT = "/testExplicitConst/{arg}";
