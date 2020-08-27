@@ -1,0 +1,26 @@
+GET http://localhost:8080/test/prop_placeholder/*
+Accept: application/json
+
+###
+###
+GET http://localhost:8080/test
+
+###
+GET http://localhost:8080/test/noLeadingSlash
+
+###
+GET http://localhost:8080/test/prop_placeholder/*
+
+###
+GET http://localhost:8080/test/foo/bar/{{bbb}}/aaa
+
+###
+GET http://localhost:8080/test/bar/{{bbb}}/ccc
+
+###
+GET http://localhost:8080/test/foo/bar/{{dummy}}
+
+###
+GET http://localhost:8080/test/boo/{{dummy2}}/zoo/{{dummy3}}
+
+###
