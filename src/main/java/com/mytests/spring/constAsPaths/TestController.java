@@ -17,7 +17,7 @@ public class TestController extends TestParent {
     public String noLeadingSlashCase(){
         return "it works";
     }
-    @GetMapping("/ttt/${urlProperty}")
+    @GetMapping("/prop_placeholder/${urlProperty}/${urlProperty2}")
     public String getHello() {
 
 
